@@ -13,7 +13,6 @@ TrackSpeed is a privacy-focused GPS speed and distance tracking app for iOS. Tra
 
 ## 🔗 Links
 
-- **App Repository**: [TrackSpeed](https://github.com/dan-bel/TrackSpeed) (Private)
 - **Privacy Policy**: [View Online](https://dan-bel.github.io/TrackSpeed-Info/privacy.html)
 - **Developer Contact**: apps@beldiman.net
 
@@ -29,7 +28,6 @@ TrackSpeed is built with privacy as the top priority:
 
 For privacy questions or app support:
 - **Email**: apps@beldiman.net
-- **Issues**: Use the private repository for technical issues
 
 ---
 
