@@ -3,40 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrackSpeed - Privacy & Info</title>
-    <meta http-equiv="refresh" content="0; url=privacy.html">
+    <title>Dan's SpeedTracker - GPS Speed Tracking for iOS</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             margin: 0;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            text-align: center;
+            min-height: 100vh;
         }
         .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            text-align: center;
             background: rgba(255, 255, 255, 0.1);
             padding: 40px;
             border-radius: 15px;
             backdrop-filter: blur(10px);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
         h1 {
+            font-size: 3em;
             margin-bottom: 20px;
-            font-size: 2.5em;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
-        p {
-            font-size: 1.2em;
+        .subtitle {
+            font-size: 1.3em;
             margin-bottom: 30px;
+            opacity: 0.9;
         }
-        .redirect-note {
-            font-size: 0.9em;
-            opacity: 0.8;
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
         }
-        .privacy-link {
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .feature h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+        .feature p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .link-button {
             display: inline-block;
             background: white;
             color: #667eea;
@@ -44,31 +78,114 @@
             border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .privacy-link:hover {
+        .link-button:hover {
             transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .contact {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .privacy-note {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            font-size: 0.95em;
+            opacity: 0.9;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🏃‍♂️ TrackSpeed</h1>
-        <p>Privacy-focused speed and distance tracking for iOS</p>
-        
-        <a href="privacy.html" class="privacy-link">View Privacy Policy</a>
-        
-        <div class="redirect-note">
-            <p>You will be automatically redirected to our privacy policy...</p>
+        <div class="hero">
+            <h1>🚀 Dan's SpeedTracker</h1>
+            <p class="subtitle">Professional GPS speed tracking with complete privacy</p>
+            <p>Track your speed, distance, and routes with precision. All data stays on your device - no cloud storage, no tracking, no subscriptions.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">📍</span>
+                <h3>Real-Time GPS</h3>
+                <p>Accurate speed display with advanced GPS filtering and multiple unit support (km/h, mph, knots, m/s)</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">📊</span>
+                <h3>Track Recording</h3>
+                <p>Background recording captures complete routes with distance, elevation, and detailed statistics</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">📂</span>
+                <h3>GPX Export</h3>
+                <p>Export your tracks in standard GPX format for use with other apps and platforms</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">🔒</span>
+                <h3>100% Private</h3>
+                <p>All data stays on your device. No accounts, no cloud storage, no data collection</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">🔋</span>
+                <h3>Battery Optimized</h3>
+                <p>Smart battery management and GPS optimization for extended tracking sessions</p>
+            </div>
+
+            <div class="feature">
+                <span class="feature-icon">🆓</span>
+                <h3>Completely Free</h3>
+                <p>No ads, no subscriptions, no in-app purchases. Full functionality at no cost</p>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="privacy.html" class="link-button">Privacy Policy</a>
+            <a href="mailto:apps@beldiman.net" class="link-button">Contact Support</a>
+        </div>
+
+        <div class="contact">
+            <h2>Support & Contact</h2>
+            <p><strong>Email:</strong> apps@beldiman.net</p>
+            <p>For technical support, feature requests, or general questions about Dan's SpeedTracker</p>
+        </div>
+
+        <div class="privacy-note">
+            <p><strong>Privacy First:</strong> Dan's SpeedTracker is built with privacy as the top priority. Your location data never leaves your device, and no user accounts or cloud services are required. You have complete control over your data.</p>
         </div>
     </div>
-
-    <script>
-        // Fallback redirect in case meta refresh doesn't work
-        setTimeout(function() {
-            window.location.href = 'privacy.html';
-        }, 2000);
-    </script>
 </body>
-</html> 
+</html>
