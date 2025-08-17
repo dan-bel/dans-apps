@@ -17,7 +17,7 @@
         .container {
             background: white;
             padding: 40px;
-            border-radius: 10px;
+            border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h1 {
@@ -28,166 +28,247 @@
         h2 {
             color: #34495e;
             margin-top: 30px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
         }
         h3 {
-            color: #7f8c8d;
+            color: #2980b9;
+            margin-top: 25px;
         }
-        .last-updated {
-            background: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            font-style: italic;
-            margin-bottom: 30px;
+        .highlight {
+            background-color: #e8f4fd;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
         }
-        ul, ol {
-            padding-left: 25px;
+        .warning {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            padding: 15px;
+            border-left: 4px solid #28a745;
+            margin: 15px 0;
+        }
+        ul {
+            padding-left: 20px;
         }
         li {
             margin-bottom: 8px;
         }
+        .last-updated {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 30px;
+        }
         .contact-info {
-            background: #e8f6f3;
+            background-color: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #16a085;
-        }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-            text-align: center;
-            color: #7f8c8d;
-            font-style: italic;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            .container {
-                padding: 20px;
-            }
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Dan's SpeedTracker Privacy Policy</h1>
-        
-        <div class="last-updated">
-            <strong>Last updated: July 24, 2025</strong>
-        </div>
+        <p class="last-updated"><strong>Last updated:</strong> August 17, 2025</p>
 
         <h2>Introduction</h2>
         <p>Dan's SpeedTracker ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your information when you use the Dan's SpeedTracker mobile application (the "App").</p>
 
+        <div class="success">
+            <strong>Privacy-First Approach:</strong> All your location data stays on your device. We never send your tracking data to our servers or share it with third parties.
+        </div>
+
         <h2>Information We Collect</h2>
-        
+
         <h3>Location Data</h3>
         <p>Dan's SpeedTracker is a speed and distance tracking application that requires access to your device's location services to function properly. We collect:</p>
         <ul>
-            <li><strong>GPS coordinates</strong> (latitude and longitude)</li>
-            <li><strong>Speed measurements</strong> derived from location data</li>
-            <li><strong>Elevation data</strong> when available</li>
-            <li><strong>Distance traveled</strong> calculated from GPS points</li>
-            <li><strong>Timestamps</strong> of location recordings</li>
+            <li>GPS coordinates (latitude and longitude)</li>
+            <li>Speed measurements derived from location data</li>
+            <li>Elevation data when available from GPS</li>
+            <li>Distance traveled calculated from GPS points</li>
+            <li>Timestamps of location recordings</li>
+            <li>GPS accuracy measurements for data validation</li>
         </ul>
 
         <h3>Usage Data</h3>
-        <p>We may collect:</p>
+        <p>We may collect minimal usage data to improve the app:</p>
         <ul>
-            <li><strong>App usage statistics</strong> (features used, session duration)</li>
-            <li><strong>Device information</strong> (iOS version, device model)</li>
-            <li><strong>Crash reports</strong> to improve app stability</li>
+            <li>App usage statistics (features used, session duration)</li>
+            <li>Device information (iOS version, device model) for compatibility</li>
+            <li>Crash reports to improve app stability (handled by Apple's App Store Connect)</li>
+        </ul>
+
+        <h3>Device Features</h3>
+        <p>The app uses various device features to enhance your experience:</p>
+        <ul>
+            <li><strong>Haptic Feedback:</strong> Device vibrations for user interaction feedback (no data collection)</li>
+            <li><strong>Background Processing:</strong> Maintains GPS accuracy during active tracking</li>
+            <li><strong>Live Activities:</strong> Real-time display on lock screen and Dynamic Island</li>
         </ul>
 
         <h2>How We Use Your Information</h2>
-        
+
         <h3>Primary Uses</h3>
         <ul>
-            <li><strong>Track your speed and distance</strong> during recording sessions</li>
-            <li><strong>Calculate route statistics</strong> (average speed, maximum speed, elevation changes)</li>
-            <li><strong>Store your tracking history</strong> locally on your device</li>
-            <li><strong>Generate route maps</strong> and visualizations</li>
-            <li><strong>Export tracking data</strong> in GPX format when requested</li>
+            <li>Track your speed and distance during recording sessions</li>
+            <li>Calculate route statistics (average speed, maximum speed, elevation changes)</li>
+            <li>Store your tracking history locally on your device</li>
+            <li>Generate route maps and visualizations</li>
+            <li>Display real-time tracking information via Live Activities</li>
+            <li>Export tracking data in GPX format when requested</li>
         </ul>
 
         <h3>Secondary Uses</h3>
         <ul>
-            <li><strong>Improve app performance</strong> and fix bugs</li>
-            <li><strong>Develop new features</strong> based on usage patterns</li>
-            <li><strong>Ensure app security</strong> and prevent misuse</li>
+            <li>Improve app performance and fix bugs</li>
+            <li>Develop new features based on usage patterns</li>
+            <li>Ensure app security and prevent misuse</li>
+            <li>Validate GPS data accuracy and filter invalid readings</li>
         </ul>
 
+        <h2>Live Activities and Dynamic Island</h2>
+        <p>Dan's SpeedTracker provides real-time tracking information on your lock screen and Dynamic Island:</p>
+        <ul>
+            <li>Current speed and distance display during active tracking</li>
+            <li>Elapsed time and GPS signal quality indicators</li>
+            <li>Updates only occur during active recording sessions</li>
+            <li>No additional data collection beyond normal tracking</li>
+            <li>Can be disabled in app settings or iOS Settings</li>
+            <li>Automatically stops when tracking ends</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Live Activities Privacy:</strong> Live Activity data is processed entirely on your device and follows the same privacy protections as the main app.
+        </div>
+
         <h2>Data Storage and Security</h2>
-        
+
         <h3>Local Storage</h3>
         <ul>
-            <li><strong>All location data is stored locally</strong> on your device using Core Data</li>
-            <li><strong>No location data is transmitted</strong> to our servers or third parties</li>
-            <li><strong>Data remains under your control</strong> and can be deleted at any time</li>
+            <li>All location data is stored locally on your device using Core Data</li>
+            <li>No location data is transmitted to our servers or third parties</li>
+            <li>Data remains under your control and can be deleted at any time</li>
+            <li>Automatic data validation and corruption protection</li>
+            <li>Regular data integrity checks to ensure reliability</li>
         </ul>
 
         <h3>Security Measures</h3>
         <ul>
-            <li><strong>Encrypted storage</strong> using iOS built-in encryption</li>
-            <li><strong>No cloud backup</strong> of sensitive location data unless you explicitly enable iCloud</li>
-            <li><strong>Secure coding practices</strong> to prevent data breaches</li>
+            <li>Encrypted storage using iOS built-in encryption</li>
+            <li>No cloud backup of sensitive location data unless you explicitly enable iCloud</li>
+            <li>Secure coding practices to prevent data breaches</li>
+            <li>Thread-safe data operations to prevent corruption</li>
+            <li>Automatic recovery mechanisms for data protection</li>
         </ul>
 
         <h2>Background Location Usage</h2>
-        <p>Dan's SpeedTracker requests "Always" location permission to enable background tracking features:</p>
+        <p>Dan's SpeedTracker requests location permissions to enable comprehensive tracking features:</p>
+
+        <div class="warning">
+            <strong>Important:</strong> Background location is only used during active tracking sessions when you explicitly start recording.
+        </div>
+
+        <h3>Permission Types</h3>
         <ul>
-            <li><strong>Background tracking</strong> continues when the app is minimized during active recording</li>
-            <li><strong>Location data is only collected</strong> during active tracking sessions</li>
-            <li><strong>No location tracking</strong> occurs when you're not actively recording a track</li>
-            <li><strong>You can disable background tracking</strong> in iOS Settings at any time</li>
+            <li><strong>"When In Use":</strong> Basic tracking while app is open and active</li>
+            <li><strong>"Always":</strong> Allows background tracking during active recording sessions</li>
+            <li><strong>Precise Location:</strong> Required for accurate speed and distance measurements</li>
+        </ul>
+
+        <h3>Background Usage Specifics</h3>
+        <ul>
+            <li>Background tracking continues only when you have an active recording session</li>
+            <li>Location updates stop immediately when you end tracking</li>
+            <li>No location tracking occurs when you're not actively recording</li>
+            <li>Background processing is optimized for battery life</li>
+            <li>You can disable background tracking in iOS Settings at any time</li>
         </ul>
 
         <h2>Data Sharing</h2>
-        
+
         <h3>We Do Not Share Your Data</h3>
-        <ul>
-            <li><strong>No third-party sharing</strong> of your location or personal data</li>
-            <li><strong>No advertising networks</strong> or analytics services with access to location data</li>
-            <li><strong>No data sales</strong> or commercial use of your information</li>
-        </ul>
+        <div class="success">
+            <ul>
+                <li>No third-party sharing of your location or personal data</li>
+                <li>No advertising networks or analytics services with access to location data</li>
+                <li>No data sales or commercial use of your information</li>
+                <li>No cloud processing or server-side analytics</li>
+                <li>No social media integration or automatic sharing</li>
+            </ul>
+        </div>
 
         <h3>Export Features</h3>
         <ul>
-            <li><strong>GPX export</strong> allows you to share your own data with other apps (Strava, fitness apps, etc.)</li>
-            <li><strong>Sharing is always user-initiated</strong> and under your complete control</li>
-            <li><strong>No automatic data transmission</strong> to external services</li>
+            <li>GPX export allows you to share your own data with other apps (Strava, fitness apps, etc.)</li>
+            <li>Exported GPX files contain: GPS coordinates, timestamps, elevation data, and speed information</li>
+            <li>Sharing is always user-initiated and under your complete control</li>
+            <li>No automatic data transmission to external services</li>
+            <li>You choose exactly which tracks to export and when</li>
         </ul>
 
         <h2>Your Rights and Controls</h2>
-        
+
         <h3>Data Control</h3>
         <ul>
-            <li><strong>View all your data</strong> within the app's track history</li>
-            <li><strong>Delete individual tracks</strong> or all data at any time</li>
-            <li><strong>Export your data</strong> in standard GPX format</li>
-            <li><strong>Disable location services</strong> for the app in iOS Settings</li>
+            <li>View all your data within the app's track history</li>
+            <li>Delete individual tracks or all data at any time</li>
+            <li>Export your data in standard GPX format</li>
+            <li>Control Live Activity display settings</li>
+            <li>Adjust GPS accuracy vs battery life settings</li>
+            <li>Disable location services for the app in iOS Settings</li>
         </ul>
 
-        <h3>Location Permissions</h3>
+        <h3>Location Permissions Management</h3>
+        <p>You can change location permissions at any time in:</p>
         <ul>
-            <li><strong>"When In Use"</strong> - Basic tracking while app is open</li>
-            <li><strong>"Always"</strong> - Background tracking during active sessions</li>
-            <li><strong>"Never"</strong> - Completely disable location access (app won't function)</li>
+            <li><strong>iOS Settings</strong> > Privacy & Security > Location Services > Dan's SpeedTracker</li>
+            <li><strong>Options include:</strong></li>
+            <ul>
+                <li>"Never" - Completely disable location access (app won't function)</li>
+                <li>"Ask Next Time" - Request permission for each use</li>
+                <li>"When In Use" - Basic tracking while app is open</li>
+                <li>"Always" - Background tracking during active sessions</li>
+            </ul>
         </ul>
-        <p>You can change these permissions at any time in iOS Settings > Privacy & Security > Location Services > Dan's SpeedTracker.</p>
 
         <h2>Children's Privacy</h2>
-        <p>Dan's SpeedTracker is not intended for use by children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. We will notify users of any significant changes through the App Store update notes or within the app.</p>
+        <p>Dan's SpeedTracker is not intended for use by children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete such information.</p>
 
         <h2>Data Retention</h2>
         <ul>
-            <li><strong>Track data</strong> is stored indefinitely on your device until you delete it</li>
-            <li><strong>No server-side data retention</strong> as we don't collect data on our servers</li>
-            <li><strong>Complete data control</strong> remains with the user</li>
+            <li>Track data is stored indefinitely on your device until you delete it</li>
+            <li>No server-side data retention as we don't collect data on our servers</li>
+            <li>Complete data control remains with the user</li>
+            <li>Automatic cleanup of temporary processing data</li>
+            <li>GPS validation data is kept only for current session</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>Dan's SpeedTracker uses minimal third-party services:</p>
+        <ul>
+            <li><strong>Apple Maps:</strong> For route visualization (subject to Apple's privacy policy)</li>
+            <li><strong>iOS Location Services:</strong> Core GPS functionality (subject to iOS privacy controls)</li>
+            <li><strong>iOS Core Data:</strong> Local database storage (entirely on-device)</li>
+            <li><strong>Apple App Store Connect:</strong> Crash reporting (no personal data shared)</li>
+        </ul>
+
+        <div class="highlight">
+            <strong>Important:</strong> No third-party services have access to your location data. All integrations are for essential app functionality only.
+        </div>
+
+        <h2>Core Data & iCloud</h2>
+        <ul>
+            <li>Local storage uses iOS Core Data framework for reliability</li>
+            <li>iCloud sync may occur if you enable it in iOS Settings (optional)</li>
+            <li>Even with iCloud enabled, no server processing occurs - data remains encrypted</li>
+            <li>iCloud sync is controlled entirely by iOS, not by our app</li>
         </ul>
 
         <h2>International Users</h2>
@@ -195,58 +276,57 @@
         <ul>
             <li><strong>GDPR</strong> (General Data Protection Regulation) for EU users</li>
             <li><strong>CCPA</strong> (California Consumer Privacy Act) for California residents</li>
-            <li><strong>Other applicable local privacy laws</strong></li>
-        </ul>
-
-        <h2>Third-Party Services</h2>
-        <p>Dan's SpeedTracker uses minimal third-party services:</p>
-        <ul>
-            <li><strong>Apple Maps</strong> for route visualization (subject to Apple's privacy policy)</li>
-            <li><strong>iOS location services</strong> (subject to iOS privacy controls)</li>
-        </ul>
-        <p>No third-party services have access to your location data.</p>
-
-        <h3>Core Data & iCloud</h3>
-        <ul>
-            <li><strong>Local storage</strong> uses iOS Core Data framework</li>
-            <li><strong>iCloud sync</strong> may occur if you enable it in iOS Settings (optional)</li>
-            <li><strong>No server processing</strong> even with iCloud - data remains encrypted</li>
+            <li><strong>PIPEDA</strong> (Personal Information Protection and Electronic Documents Act) for Canadian users</li>
+            <li>Other applicable local privacy laws</li>
         </ul>
 
         <h2>Technical Details</h2>
-        
+
         <h3>Data Types Collected</h3>
         <ul>
-            <li>GPS coordinates with timestamps</li>
+            <li>GPS coordinates with millisecond-precision timestamps</li>
             <li>Calculated speed and distance values</li>
-            <li>Elevation measurements</li>
-            <li>Route polylines for map display</li>
+            <li>Elevation measurements from GPS when available</li>
+            <li>Route polylines for map display and analysis</li>
+            <li>GPS signal quality and accuracy measurements</li>
+            <li>Real-time tracking statistics for Live Activities</li>
         </ul>
 
         <h3>Data Processing</h3>
         <ul>
-            <li>All processing occurs locally on your device</li>
+            <li>All processing occurs locally on your device using iOS frameworks</li>
             <li>No cloud processing or server-side analytics</li>
             <li>Calculations performed using iOS Core Location framework</li>
+            <li>GPS validation and filtering algorithms run on-device</li>
+            <li>Live Activity updates processed locally</li>
+            <li>Background task management for GPS continuity during active tracking</li>
         </ul>
 
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
-            <p><strong>Email:</strong> apps@beldiman.net<br>
-               <strong>Privacy Policy:</strong> <a href="https://dan-bel.github.io/dans-apps/SpeedTracker/privacy.html">https://dan-bel.github.io/dans-apps/SpeedTracker/privacy.html</a></p>
-        </div>
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will notify users of any significant changes through:</p>
+        <ul>
+            <li>App Store update notes</li>
+            <li>In-app notifications for major changes</li>
+            <li>Updated version date at the top of this policy</li>
+        </ul>
 
         <h2>Consent</h2>
         <p>By using Dan's SpeedTracker, you consent to the collection and use of information as described in this Privacy Policy. You can withdraw consent at any time by:</p>
         <ul>
             <li>Disabling location permissions in iOS Settings</li>
             <li>Deleting your track data within the app</li>
+            <li>Turning off Live Activities in app settings</li>
             <li>Uninstalling the application</li>
         </ul>
 
-        <div class="footer">
-            <p><strong>Dan's SpeedTracker is committed to transparency and user privacy. Your location data belongs to you and remains under your complete control.</strong></p>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            <ul>
+                <li><strong>App:</strong> Dan's SpeedTracker Settings > About section</li>
+                <li><strong>Website:</strong> <a href="https://dan-bel.github.io/dans-apps/SpeedTracker/">https://dan-bel.github.io/dans-apps/SpeedTracker/</a></li>
+            </ul>
+            <p><em>We are committed to addressing any privacy concerns promptly and transparently.</em></p>
         </div>
     </div>
 </body>
